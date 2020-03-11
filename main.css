@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('./img/winter-moutain-4910186_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252A;
+    height: 10vh;
+    padding: 30px;
+}
+
+.logo, li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    color: #0088a9;
+}
+
+ul {
+    display: flex;
+}
+
+li.nav_links {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+li.nav_links a:hover {
+    transition: all 0.3s ease-out;
+    color: 	#0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
