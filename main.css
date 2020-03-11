@@ -39,8 +39,14 @@ header {
     color: #0088a9;
 }
 
+nav {
+    display: flex;
+    justify-content: row;
+}
+
 ul {
     display: flex;
+    align-items: center;
 }
 
 li.nav_links {
@@ -65,3 +71,4 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
+
