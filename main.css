@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 html, body {
+    width: 100%;
     height: 100%;
 }
 
@@ -14,6 +17,15 @@ body {
     background-image: url('./img/winter-moutain-4910186_1920.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header, main, footer {
+    flex-shrink: 0;
 }
 
 header {
@@ -21,15 +33,13 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #24252A;
-    height: 10vh;
-    padding: 30px;
+    padding: 10px 25px;
 }
 
 .logo, li, a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    text-decoration: none;
     color: #ecf0f1;
 }
 
@@ -39,12 +49,7 @@ header {
     color: #0088a9;
 }
 
-nav {
-    display: flex;
-    justify-content: row;
-}
-
-ul {
+nav, ul {
     display: flex;
     align-items: center;
 }
@@ -54,7 +59,7 @@ li.nav_links {
     padding: 0 20px;
 }
 
-li.nav_links a:hover {
+li.nav_links a:hover, footer a:hover {
     transition: all 0.3s ease-out;
     color: 	#0088a9;
 }
@@ -70,5 +75,26 @@ button {
 
 button:hover {
     background-color: rgba(0, 136, 169, 0.8);
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24252A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ecf0f1;
 }
 
