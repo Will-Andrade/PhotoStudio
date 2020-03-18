@@ -10,24 +10,25 @@
 <body>
     <header>
         <p class="logo">PhotoStudio</p>
-        <form action="/">
-            <label for="searchInput">
-                <input type="text" placeholder="The World is yours" />
-            </label>
-        </form>
+        <div class="search-input-box">
+            <form action="/" method="GET" class="search-input-form">
+                <input type="text" />
+                <button><img src="./img/search.svg" class="search-button"></button>
+            </form>
+        </div>
         <nav>
             <ul>
                 <li class="nav_links"><a href="#">Login</a></li>
                 <li class="nav_links"><a href="#">Sign up</a></li>
                 <li class="nav_links"><a href="#">Our goal</a></li>
             </ul>
-            <button><a href="#">Contact</a></button>
+            <button class="ctc"><a href="#">Contact</a></button>
         </nav>
     </header>
 
     <main>
-        <h2>Welcome to PhotoStudio</h2>
-        <p>Share your lens with thousands of others or find your inspiration inside the community!</p>
+        <h1>Welcome to PhotoStudio</h1>
+        <h3>Share your lens with thousands of others or find your inspiration inside the community!</h3>
     </main>
 
     <footer>
